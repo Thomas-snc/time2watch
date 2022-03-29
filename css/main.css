@@ -1,28 +1,34 @@
 html{
   font-size: 62.5%;
-  background-color: var(--color-primary);
+  background-color: var(--color-default);
 }
 body{
-  font: 1.6rem 'Open Sans',sans-serif;
-  margin: 0;
-  line-height: 1.6;
-}
-:root{
-  --color-default: #2F2F2F;
-  --color-primary: #dadada;
-  --color-secondary: #ffa500;
-}
-h1,h2,h3{
-  font-weight: 300;
+  font: 1.6rem;
   margin: 0;
 }
-p,figure,ul,ol{
+h1,h2,h3,h4,p, figure,ol,ul{
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
+  font-weight: 300;
+  font-size: i;
 }
 *{
   box-sizing: border-box;
+}
+a{
+  text-decoration: none ;
+  color: var(--color-primary);
+}
+button, input, select, option{
+  background: none;
+  border: 0;
+}
+:root{
+  --color-header : #23252b;
+  --color-default: #000;
+  --color-primary: #dadada;
+  --color-secondary: #ffa500;
 }
 header{
   box-shadow: 0 0 1rem var(--color-secondary);
@@ -31,10 +37,12 @@ header{
   left: 0;
   width: 100%;
 }
-
+.btn > a{
+  font-size: 2rem;
+}
 .menu{
   text-align: center;
-  background-color: #fff;
+  background-color: var(--color-header);
   box-shadow: var(--color-secondary);
 
 }
@@ -43,7 +51,6 @@ ul li.btn{
   list-style: none;
   display: inline-block;
   margin: 1rem;
-  
 }
 
 .btn :hover{
@@ -52,4 +59,11 @@ ul li.btn{
 
 main{
   padding-top: 5rem;
+}
+
+.grid-picture{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
 }
