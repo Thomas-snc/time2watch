@@ -1,6 +1,7 @@
 html{
   font-size: 62.5%;
   background-color: var(--color-default);
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 }
 body{
   font: 1.6rem;
@@ -12,6 +13,8 @@ h1,h2,h3,h4,p, figure,ol,ul{
   list-style-type: none;
   font-weight: 300;
   font-size: i;
+  color: var(--color-primary);
+
 }
 *{
   box-sizing: border-box;
@@ -46,19 +49,17 @@ header{
   box-shadow: var(--color-secondary);
 
 }
-
 ul li.btn{
   list-style: none;
   display: inline-block;
-  margin: 1rem;
+  margin: 2rem;
 }
-
 .btn :hover{
   color: var(--color-secondary);
 }
 
 main{
-  padding-top: 5rem;
+  padding-top: rem;
 }
 
 .grid-picture{
