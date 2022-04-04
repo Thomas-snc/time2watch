@@ -33,9 +33,10 @@ button, input, select, option{
   --color-primary: #dadada;
   --color-secondary: #ffa500;
 }
-header{
+header .menu{
   box-shadow: 0 0 1rem var(--color-secondary);
   position: fixed;
+  margin-bottom: rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,9 +60,14 @@ ul li.btn{
 }
 
 main{
-  padding-top: rem;
+  padding-top:10rem;
+  max-width: 70%;
+  margin: 0 auto;
 }
-
+figure > img{
+  width: 131px; 
+  height: 197px;
+}
 .grid-picture{
   display: grid;
   grid-template-columns: repeat(5, 1fr);

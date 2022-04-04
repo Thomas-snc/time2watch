@@ -12,12 +12,12 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <button id="btn1">Dark</button>
-                <button id="btn2">Light</button>
+            <button id="btn1" aria-label="thème sombre">Dark</button>
+            <button id="btn2" aria-label="thème lumineux">Light</button>
 
+            <ul>
                 <li class="btn">
-                    <a href="#">Film & Série</a>
+                    <a href="./index.html">Film & Série</a>
                 </li>
                 <li class="btn">
                     <a href="./inscription.html">Inscription</a>
@@ -26,13 +26,13 @@
         </nav>
     </header>
 
-    <!--Grille d'image-->
+    <!--Grille d'image aria-hidden="true"-->
 
     <main>
         <ul class="grid-picture">
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/vanitas.jpeg" alt="image naruto" width="131px" height="197px">
+                    <img src="./asset/vanitas.jpeg" alt="image naruto">
                     <figcaption>
                         <h2>
                             Vanitas
@@ -40,9 +40,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/attack_on_titan.jpeg" alt="image attack on titan" width="131px" height="197px">
+                    <img src="./asset/attack_on_titan.jpeg" alt="image attack on titan">
                     <figcaption>
                         <h2>
                             Attack on titan
@@ -50,9 +50,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/demon_slayer.jpeg" alt="image demon slayer" width="131px" height="197px">
+                    <img src="./asset/demon_slayer.jpeg" alt="image demon slayer">
                     <figcaption>
                         <h2>
                             Demon slayer
@@ -60,9 +60,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/eighty_six.jpeg" alt="image eighty six" width="131px" height="197px">
+                    <img src="./asset/eighty_six.jpeg" alt="image eighty six">
                     <figcaption>
                         <h2>
                             Eighty six
@@ -70,9 +70,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/one_piece.jpeg" alt="image one piece" width="131px" height="197px">
+                    <img src="./asset/one_piece.jpeg" alt="image one piece">
                     <figcaption>
                         <h2>
                             One piece
@@ -80,9 +80,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/platinum_end.jpeg" alt="image platinum end" width="131px" height="197px">
+                    <img src="./asset/platinum_end.jpeg" alt="image platinum end">
                     <figcaption>
                         <h2>
                             Platinum end
@@ -90,9 +90,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/ranking_of_king.jpeg" alt="image ranking of king" width="131px" height="197px">
+                    <img src="./asset/ranking_of_king.jpeg" alt="image ranking of king">
                     <figcaption>
                         <h2>
                             Ranking of king
@@ -100,19 +100,19 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/slime.jpeg" alt="image slime" width="131px" height="197px">
+                    <img src="./asset/slime.jpeg" alt="image slime">
                     <figcaption>
                         <h2>
-                            Moi, quand je me réincarne en slime
+                            Moi, quand je me <br> réincarne en slime
                         </h2>
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/tokyo_revenger.jpeg" alt="image Tokyo Revenger" width="131px" height="197px">
+                    <img src="./asset/tokyo_revenger.jpeg" alt="image Tokyo Revenger">
                     <figcaption>
                         <h2>
                             Tokyo revengers
@@ -120,9 +120,9 @@
                     </figcaption>
                 </figure>
             </li>
-            <li data-image="" date-title="" data-description="" data-dates="">
+            <li>
                 <figure>
-                    <img src="./asset/anime-Jujutsu-Kaisen-0-movie.jpg" alt="image Jujutsu Kaisen 0" width="131px" height="197px">
+                    <img src="./asset/anime-Jujutsu-Kaisen-0-movie.jpg" alt="image Jujutsu Kaisen 0">
                     <figcaption>
                         <h2>
                             Jujutsu kaisen 0
@@ -134,7 +134,7 @@
     </main>
 
     <footer>
-        Thomas - 2022 &copy;
+        <p> &copy;Thomas - 2022</p>
     </footer>
 
     <script src="./js/main.js"></script>
