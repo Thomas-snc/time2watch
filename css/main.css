@@ -29,7 +29,7 @@ button, input, select, option{
 }
 :root{
   --color-header : #23252b;
-  --color-default: #000;
+  --color-default: #2f2f2f;
   --color-primary: #dadada;
   --color-secondary: #ffa500;
 }
