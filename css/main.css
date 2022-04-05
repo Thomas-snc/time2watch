@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html{
   font-size: 62.5%;
   background-color: var(--color-default);
@@ -16,9 +19,6 @@ h1,h2,h3,h4,p, figure,ol,ul{
   color: var(--color-primary);
 
 }
-*{
-  box-sizing: border-box;
-}
 a{
   text-decoration: none ;
   color: var(--color-primary);
@@ -36,7 +36,6 @@ button, input, select, option{
 header .menu{
   box-shadow: 0 0 1rem var(--color-secondary);
   position: fixed;
-  margin-bottom: rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -61,16 +60,41 @@ ul li.btn{
 
 main{
   padding-top:10rem;
-  max-width: 70%;
+  max-width: 70rem;
   margin: 0 auto;
 }
-figure > img{
-  width: 131px; 
-  height: 197px;
-}
+
 .grid-picture{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
+}
+/* mobile */
+@media screen and (max-width:70.0rem){
+  main, footer{
+    margin: 0 auto;
+    max-width: 150rem;
+  }
+  
+ main section ul li figure img{
+   display: block;
+   width: 100%;
+ }
+
+ .grid-picture{
+
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+}
+@media screen and (orientation: landscape){
+  
+ .grid-picture{
+
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
 }
