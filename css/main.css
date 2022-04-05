@@ -6,6 +6,13 @@ html{
   background-color: var(--color-default);
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 }
+img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
 body{
   font: 1.6rem;
   margin: 0;
@@ -49,7 +56,11 @@ header .menu{
   box-shadow: var(--color-secondary);
 
 }
-ul li.btn{
+ul li figure figcaption{
+  padding: 1rem;
+  text-align: center;
+}
+ul .btn{
   list-style: none;
   display: inline-block;
   margin: 2rem;
@@ -59,29 +70,35 @@ ul li.btn{
 }
 
 main{
-  padding-top:10rem;
-  max-width: 70rem;
-  margin: 0 auto;
+  max-width: 120rem;
+  margin: 9.0rem auto;
 }
 
 .grid-picture{
+  
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
 }
 /* mobile */
 @media screen and (max-width:70.0rem){
+  main{
+    padding-top: 9.0rem; /* 90px */
+  }
   main, footer{
     margin: 0 auto;
-    max-width: 150rem;
+    width: auto;
   }
   
  main section ul li figure img{
    display: block;
    width: 100%;
+ }  
+     
+ .grid-picture li{
+   border: solid .1rem #fff;
  }
-
  .grid-picture{
 
   grid-template-columns: repeat(2, 1fr);
