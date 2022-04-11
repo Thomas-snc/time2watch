@@ -151,7 +151,11 @@ form select {
   background-color: #333;
   border: solid 0.2rem var(--default);
 }
-
+/*footer*/
+footer p{
+  text-align: center;
+  padding-bottom: 1rem;
+}
 /* mobile */
 @media screen and (max-width:70.0rem){
   main{
