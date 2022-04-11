@@ -166,10 +166,6 @@ form select {
    display: block;
    width: 100%;
  }  
-     
- .grid-picture li{
-   border: solid .1rem #fff;
- }
  .grid-picture{
 
   grid-template-columns: repeat(2, 1fr);
