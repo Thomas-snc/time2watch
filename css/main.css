@@ -92,6 +92,65 @@ ul .btn{
 .btn :hover{
   color: var(--color-secondary);
 }
+/*Formulaire*/ 
+fieldset {
+  border: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+fieldset legend {
+  display: block;
+  margin: 0 auto;
+  color: var(--white);
+  text-shadow: var(--secondary) 0.25rem 0.25rem 0, var(--tertiare) 0.5rem 0.5rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+form label {
+  display: block;
+  padding: 1rem 0rem;
+  color: var(--white);
+  text-shadow: var(--secondary) 0.25rem 0.25rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+form * {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  text-transform: capitalize;
+}
+form input {
+  display: block;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  color: #f0efef;
+  background-color: #333;
+  border: solid 0.2rem var(--default);
+}
+select, input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button, input, select {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: inherit;
+}
+form select {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #cccccc;
+  background-color: #333;
+  border: solid 0.2rem var(--default);
+}
 
 /* mobile */
 @media screen and (max-width:70.0rem){
