@@ -163,10 +163,10 @@ footer p{
   }
   main, footer{
     max-width: 100rem;
-    margin: 9.0rem auto;
+    margin: 3rem;
   }
   
- main   ul li figure img{
+ main ul li figure img{
    display: block;
    width: 100%;
  }  
