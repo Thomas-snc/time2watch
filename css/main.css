@@ -162,8 +162,8 @@ footer p{
     padding-top: 9.0rem; /* 90px */
   }
   main, footer{
-    margin: 0 auto;
-    width: auto;
+    max-width: 100rem;
+    margin: 9.0rem auto;
   }
   
  main   ul li figure img{
